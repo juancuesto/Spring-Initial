@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "b657353a-b416-4f73-bd1e-f787f8b048d9",
+		"name": "Fase3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Hola Gradel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}{{Port}}/v1/test1",
+							"host": [
+								"{{ip}}{{Port}}"
+							],
+							"path": [
+								"v1",
+								"test1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hola Nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}{{Port}}/v1/test?nombre=Juan",
+							"host": [
+								"{{IP}}{{Port}}"
+							],
+							"path": [
+								"v1",
+								"test"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Juan"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Desenvolupament",
+			"item": [
+				{
+					"name": "Hola Gradle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}{{port}}/v1/test1",
+							"host": [
+								"{{ip}}{{port}}"
+							],
+							"path": [
+								"v1",
+								"test1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hola nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}{{port}}/v1/test?nombre=Antonio",
+							"host": [
+								"{{ip}}{{port}}"
+							],
+							"path": [
+								"v1",
+								"test"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Antonio"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Preproduccio",
+			"item": [
+				{
+					"name": "Hello Gradle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}{{port}}/v1/test1",
+							"host": [
+								"{{ip}}{{port}}"
+							],
+							"path": [
+								"v1",
+								"test1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hello nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}{{port}}/v1/test?nombre=Antonio",
+							"host": [
+								"{{ip}}{{port}}"
+							],
+							"path": [
+								"v1",
+								"test"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Antonio"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:8080"
+		},
+		{
+			"key": "IP",
+			"value": "http://localhost"
+		},
+		{
+			"key": "Port",
+			"value": ":8080"
+		}
+	]
+}
