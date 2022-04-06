@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import springBootInitialDemo.dto.UserResponseDto;
+import springBootInitialDemo.repository.UserRepository;
 import springBootInitialDemo.service.IUserService;
 
 @RestController
@@ -17,10 +18,20 @@ public class InitialController {
     public InitialController(IUserService userService){
         this.userService = userService;
     }
+    @GetMapping("/test1")
+    public String helloGradle1() {
+        return "Hello Gradle";
+    }
+    
+    @PostMapping("/save")
+    public ResponseEntity<UserRepository> save(@RequestParam UserRepository nombre) {
+    	UserRepository obj=new UserRepository();
+        return new ResponseEntity<UserRepository>(obj,HttpStatus.OK);
+    }
 
     @GetMapping("/test")
-    public String helloGradle() {
-        return "Hello Gradle!";
+    public String helloGradle(@RequestParam String nombre) {
+        return "Hello "+ nombre;
     }
 
     //@PutMapping(value ="", consumes = {"application/json"})
